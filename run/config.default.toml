@@ -1,4 +1,15 @@
-# Example of string setting
-some_text_setting = "setting 設定 设置 सेटिंग"
+# サーバーID
+category_ids = ["000000000000000000"]
 
-# ↓ Add your settings here
+# 無視チャンネルID
+ignore_channel_ids = ["000000000000000000"]
+
+# 送信チャンネル Webhook
+send_channel_webhook = "https://discord.com/api/webhooks/000000000000000000/AbCdEfGhIjKlMnOpQrStUvWxYz1234567890"
+
+# クールダウン (秒)
+cooldown = 30
+
+# 対象ユーザー
+[target_users]
+"000000000000000000" = "<&@000000000000000000> 〇〇がVCに参加しました！"

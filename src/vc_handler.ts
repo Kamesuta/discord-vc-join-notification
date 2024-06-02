@@ -53,7 +53,10 @@ export async function onVoiceStateUpdate(
   try {
     // Webhookを送信
     await webhookClient.send({
-      content: targetMessage,
+      content: targetMessage.replace(
+        '{vc_link}',
+        `https://discord.com/channels/${joinedChannel.guild.id}/${joinedChannel.id}`,
+      ),
       username: newState.member.displayName,
       avatarURL: newState.member.user.displayAvatarURL(),
     });
